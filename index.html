@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<!-- СЮДИ КОД GTM ДЛЯ HEAD -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5RV4MLFJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)
+;}
+  gtag('js', new Date());
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Чисті Лапки — Професійне прибирання</title>
+<style>
+  :root {
+    --primary: #0ea5e9;
+    --primary-hover: #0284c7;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --border: #e2e8f0;
+    --accent-bg: #e0f2fe;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  header {
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent-bg) 100%);
+    padding: 72px 0 64px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: var(--surface);
+    color: var(--primary-hover);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #bae6fd;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 620px;
+    margin: 0 auto 32px;
+  }
+
+  .cta-button {
+    background-color: var(--primary);
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.35);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+
+  .cta-button:hover {
+    background-color: var(--primary-hover);
+  }
+
+  .cta-button:active {
+    transform: scale(0.98);
+  }
+  .order {
+    margin-top: 10px;
+  }
+
+  main {
+    flex: 1;
+    padding: 56px 0;
+  }
+
+  section {
+    margin-bottom: 56px;
+  }
+
+  section:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .benefit-card {
+    background-color: var(--surface);
+    padding: 28px 24px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  }
+
+  .benefit-icon {
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-bg);
+    color: var(--primary-hover);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    margin-bottom: 16px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .benefit-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+
+  .pricing-card {
+    background-color: var(--surface);
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 36px 28px;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.08);
+  }
+
+  .price-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-hover);
+    margin-bottom: 8px;
+  }
+
+  .price-value {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .price-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+
+  footer {
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 36px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+
+  .footer-contacts a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .footer-contacts a:hover {
+    color: var(--primary);
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+    color: #94a3b8;
+  }
+
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 100;
+  }
+
+  .modal-backdrop.active {
+    display: flex;
+  }
+
+  .modal {
+    background: var(--surface);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    padding: 28px 24px;
+    position: relative;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+
+  .modal h3 {
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+  }
+
+  .modal p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+    text-align: left;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+
+  .submit-secondary {
+    width: 100%;
+    background-color: var(--text-main);
+    color: #ffffff;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+
+  .success-msg {
+    display: none;
+    text-align: center;
+    padding: 16px 0 4px;
+    color: #059669;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 48px 0 44px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+    }
+
+    .benefits-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .price-value {
+      font-size: 2.35rem;
+    }
+
+    .footer-contacts {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+</style>
+</head>
+<body>
+<!-- СЮДИ КОД GTM ДЛЯ BODY -->
+
+  <header>
+    <div class="container">
+      <span class="badge">Клінінг без зайвих турбот</span>
+      <h1>Чисті Лапки</h1>
+      <p class="subtitle">
+        Професійне прибирання квартир, салонів, офісів та під’їздів. Візьмемо всю рутину на себе, щоб ви могли присвятити вільний час справді важливим речам.
+      </p>
+      <button type="button" class="cta-button" onclick="document.getElementById('orderModal').classList.add('active')">Залишити заявку</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="benefits-title">
+      <h2 id="benefits-title">Чому обирають нас</h2>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="benefit-icon" aria-hidden="true">&#9201;</div>
+          <h3>Економія вашого часу</h3>
+          <p>Забудьте про вихідні зі шваброю. Ви займаєтесь роботою, відпочинком чи сім’єю, поки ми наводимо ідеальний лад.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" aria-hidden="true">&#10024;</div>
+          <h3>Будь-які приміщення</h3>
+          <p>Акуратно та ретельно прибираємо житлові квартири, робочі офіси, б’юті-салони та під’їзди багатоквартирних будинків.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" aria-hidden="true">&#128737;</div>
+          <h3>Прозорі умови</h3>
+          <p>Фіксована погодинна оплата без прихованих доплат, пунктуальні клінери та дбайливе ставлення до ваших речей.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Вартість послуг</h2>
+      <div class="pricing-card">
+        <div class="price-label">Єдиний тариф</div>
+        <div class="price-value">200 грн/год</div>
+        <p class="price-desc">
+          Оплачуйте лише фактичний час роботи клінера. Підходить для разового та регулярного прибирання будь-яких об’єктів.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-contacts">
+        <a href="tel:+380000000000">+38 (000) 000-00-00</a>
+        <a href="mailto:hello@chystilapky.ua">hello@chystilapky.ua</a>
+        <span>Щодня з 08:00 до 21:00</span>
+      </div>
+      <p class="copyright">&copy; 2026 «Чисті Лапки». Усі права захищено.</p>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)this.classList.remove('active')">
+    <div class="modal">
+      <button type="button" class="modal-close" aria-label="Закрити" onclick="document.getElementById('orderModal').classList.remove('active')">&times;</button>
+      <h3 id="modalTitle">Замовити прибирання</h3>
+      <p>Вкажіть контакти — ми зателефонуємо за кілька хвилин для узгодження деталей.</p>
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="clientName">Ваше ім’я</label>
+          <input type="text" id="clientName" name="name" placeholder="Олена" required>
+        </div>
+        <div class="form-group">
+          <label for="clientPhone">Номер телефону</label>
+          <input type="tel" id="clientPhone" name="phone" placeholder="+38 (0__) ___-__-__" required>
+        </div>
+        <div class="form-group">
+          <label for="objectType">Що потрібно прибрати?</label>
+            <select id="objectType" name="object">
+            <option value="apartment">Квартира</option>
+            <option value="office">Офіс</option>
+            </select>
+         <button class="cta-button order" type="submit" onclick="window.dataLayer.push({'event': 'lead_submit'})">Залишити заявку</button>
+          </div>
+</form>
+    </div>
+  </div>
+</body>
